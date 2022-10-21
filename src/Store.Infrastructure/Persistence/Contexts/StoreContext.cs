@@ -10,5 +10,6 @@ namespace Store.Infrastructure.Persistence.Contexts
         }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
