@@ -30,6 +30,12 @@ namespace Store.WebApi.Controllers
             return Ok(_EmpDBContext.Employees.FirstOrDefault(c => c.EmpId == id));
         }
 
+        [HttpGet("GetTest")]
+        public IActionResult GetTest(string p)
+        {
+            // return Ok(_EmpDBContext.Employees.FirstOrDefault(c => c.EmpId == id));
+            return Ok(p.ToString());
+        }
 
         [HttpPost]
         public IActionResult Post([FromBody] Employee employee)
