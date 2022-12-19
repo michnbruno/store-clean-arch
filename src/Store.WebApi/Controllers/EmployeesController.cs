@@ -34,7 +34,7 @@ namespace Store.WebApi.Controllers
         public IActionResult GetTest(string p)
         {
             // return Ok(_EmpDBContext.Employees.FirstOrDefault(c => c.EmpId == id));
-            return Ok(p.ToString());
+            return Ok("monday commit " + p.ToString());
         }
 
         [HttpPost]
